@@ -37,17 +37,3 @@ The BLEU scores reported in existing work are summarized in [BLEU scores in exis
 
 ## Training performance of WMT2014 English$\to$French
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~xyc1207/16.embed"></iframe>
-
-
-
-
-## BLEU scores of WMT 14 English to German
-
-We work on the v1 setting 
-
-| Network Architecture | BLEU | 
-|-------|--------|
-| 6 layers | 29.12 | 
-| 8 layers | 28.75 | 
-| 10 layers | 28.63 | 
-| 12 layers | failed |
