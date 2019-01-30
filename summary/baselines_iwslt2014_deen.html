@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>IWSLT 2014 German&#8594;English</title>
+    
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+      $(document).ready(function() {
+      $('#bleus').DataTable({
+          "order": [[ 5, "desc" ]]
+      });
+      } );
+    </script>
+<h1>IWSLT 2014 German&#8594;English</h1>
+<table id="bleus" class="display" style="width:100%">
+<thead>
+    <tr>
+      <th scope="col">Paper</th>
+      <th scope="col">Basic Architecture</th>
+      <th scope="col">#Layer</th>
+      <th scope="col">#Hidden</th>
+      <th scope="col">Algorithm</th>
+      <th scope="col">BLEU</th>
+      <th scope="col">Open-Sourced</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+      <td><a href="https://openreview.net/forum?id=HyGhN2A5tm">Multi-agent dual learning</a> <a>[bib]</a></td>
+      <td>Transformer</td>
+      <td>8</td>
+      <td>256</td>
+      <td>The output model is boosted by the duality bridged by multiple models</td>
+      <td>35.56</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><a href="https://taoqin.github.io/papers/tiedT.AAAI2019.pdf">Tied transformer</a> <a>[bib]</a></td>
+      <td>Transformer</td>
+      <td>8</td>
+      <td>384</td>
+      <td>A group of parameters shared by encoder and decoder</td>
+      <td>35.52</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><a href="https://papers.nips.cc/paper/8019-layer-wise-coordination-between-encoder-and-decoder-for-neural-machine-translation">Layer-wise coordination</a> <a>[bib]</a></td>
+      <td>Transformer</td>
+      <td>18</td>
+      <td>256</td>
+      <td>Layer-wise coordination and parameter sharing</td>
+      <td>35.31</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.microsoft.com/en-us/research/people/yinxia/">One model for a pair of dual tasks</a> <a>[bib]</a></td>
+      <td>Transformer</td>
+      <td>8</td>
+      <td>256</td>
+      <td>One model trained for both De->En and En->De</td>
+      <td>35.30 &#177 0.1</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><a href="http://proceedings.mlr.press/v80/xia18a/xia18a.pdf">Model-level dual learning</a> <a>[bib]</a></td>
+      <td>Transformer</td>
+      <td>6</td>
+      <td>256</td>
+      <td>Use two language modules + dual inference</td>
+      <td>35.19</td>
+      <td>No</td>
+    </tr> 
+    <tr>
+      <td><a href="https://arxiv.org/pdf/1810.12081.pdf">Learn to teach loss functions</a> <a>[bib]</a></td>
+      <td>Transformer</td>
+      <td>6</td>
+      <td>256</td>
+      <td>Dynamic loss function taught by a teacher</td>
+      <td>34.80</td>
+      <td><a>No</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://openreview.net/pdf?id=ryx3_iAcY7">Role interactive layer</a> <a>[bib]</a></td>
+      <td>Transformer</td>
+      <td>3</td>
+      <td>256</td>
+      <td>+RIL, a layer between the word embedding and the first hidden layer of the network</td>
+      <td>34.74</td>
+      <td><a>No</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://arxiv.org/pdf/1809.06858.pdf">FRAGE</a> <a>[bib]</a></td>
+      <td>Transformer</td>
+      <td>5</td>
+      <td>256</td>
+      <td>+ FRAGE (Use GAN to eliminate the differences between rare and popular words)</td>
+      <td>33.97</td>
+      <td><a href="https://github.com/ChengyueGongR/Frequency-Agnostic">github</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://arxiv.org/pdf/1807.03756.pdf">Variational attention</a> <a>[bib]</a></td>
+      <td>BiLSTM</td>
+      <td>1</td>
+      <td>--</td>
+      <td>variational attention</td>
+      <td>33.68</td>
+      <td><a href="https://github.com/harvardnlp/var-attn/">github</a></td>
+    </tr>    
+    <tr>
+      <td><a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2017/11/17041-72820-1-SM.pdf">Dual transfer learning</a> <a>[bib]</a></td>
+      <td>BiLSTM</td>
+      <td>2</td>
+      <td>512</td>
+      <td>Leveraging En->De model to help boost performances </td>
+      <td>32.85</td>
+      <td><a>No</a></td>
+    </tr>     
+   
+    
+  </tbody>
+</table>
+  </body>
+</html>

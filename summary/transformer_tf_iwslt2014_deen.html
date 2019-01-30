@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>IWSLT 2014 German&#8594;English</title>
+    
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+      $(document).ready(function() {
+      $('#bleus').DataTable({
+          "order": [[ 1, "desc" ]]
+      });
+      } );
+    </script>
+<h1>IWSLT 2014 German&#8594;English</h1>
+<p>This page shows the results of IWSLT 2014 German&#8594;English translation with different architectures and hyper-parameters. Results of v2 are obtained with four indepenedent runs and v1 are got with 2 independent runs.</p>
+<table id="bleus" class="display" style="width:100%">
+<thead>
+    <tr>
+      <th scope="col">Architecture Configuration</th>
+      <th scope="col">v2</th>
+      <th scope="col">v1</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+      <td>2-layer + hidden dimension 256 + dropout 0.1</td>
+      <td>32.46 &#177 0.09</td>
+      <td>31.09 &#177 0.11</td>
+    </tr> 
+    <tr>
+      <td>2-layer + hidden dimension 256 + dropout 0.3</td>
+      <td>32.46 &#177 0.09</td>
+    </tr> 
+    <tr>
+      <td>4-layer + hidden dimension 256 + dropout 0.3</td>
+      <td>34.61  &#177  0.08</td>
+      <td>34.27  &#177  0.02</td>
+    </tr>
+    <tr>
+      <td>6-layer + hidden dimension 256 + dropout 0.3</td>
+      <td>35.06  &#177  0.05</td>
+      <td>34.26  &#177  0.09</td>
+    </tr>
+    <tr>
+      <td>8-layer + hidden dimension 256 + dropout 0.3</td>
+      <td>35.14  &#177  0.07</td>
+      <td>34.37  &#177  0.01</td>
+    </tr>    
+ 
+    <tr>
+      <td>10-layer + hidden dimension 256 + dropout 0.3</td>
+      <td>35.02  &#177  0.11</td>
+      <td>34.00  &#177  0.04</td>
+    </tr> 
+    
+    <tr>
+      <td>10-layer + hidden dimension 256 + dropout 0.4</td>
+      <td>35.19  &#177  0.06</td>
+    </tr> 
+    
+    <tr>
+      <td>6-layer + hidden dimension 512 + dropout 0.4</td>
+      <td>34.59  &#177  0.08</td>
+    </tr> 
+
+    <tr>
+      <td>6-layer + hidden dimension 512 + dropout 0.5</td>
+      <td>34.97  &#177  0.09</td>
+    </tr> 
+    
+    <tr>
+      <td>8-layer + hidden dimension 512 + dropout 0.5</td>
+      <td>34.86  &#177  0.06</td>
+    </tr> 
+  </tbody>
+</table>
+  </body>
+</html>

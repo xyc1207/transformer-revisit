@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## A Revisit of _Transformer_
 
-You can use the [editor on GitHub](https://github.com/xyc1207/transformer-revisit/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+_Transformer_ has achieved state-of-the-art results on many natural language processing tasks. In this work, we revisit _Transformer_ from the following aspects:
+- [An introduction of _Transformer_](https://xyc1207.github.io/transformer-revisit/analysis/transformer)
+- [A study on IWSLT 2014 German-to-English](https://xyc1207.github.io/transformer-revisit/analysis/iwslt2014_deen)
+- [A study on WMT 2014 English-to-French](https://xyc1207.github.io/transformer-revisit/analysis/wmt2014_enfr)
+- [A study on WMT 2014 English-to-German](https://xyc1207.github.io/transformer-revisit/analysis/wmt2014_ende)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## NMT Baselines
+We summarize the previous baselines on several benchmark datasets:
+* [IWSLT2014 German-to-English](https://xyc1207.github.io/transformer-revisit/summary/baselines_iwslt2014_deen.html)
+* [WMT 2014 English-to-French](https://xyc1207.github.io/transformer-revisit/summary/baselines_wmt14_enfr.html)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xyc1207/transformer-revisit/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This is only a draft and will be kept updating. Use github to track revisions.
