@@ -1,0 +1,10 @@
+en2fr v2 without attn dropout 
+## Inference results
+We use beam search with beamwidth 5 and lenght penalty 1.0 to generate candidates. The results are shown below:
+
+| Network Architecture | v1 | v2 |
+|-------|--------|---------|
+| 6 layers | 43.06 | 42.05 |
+| 8 layers | 42.69 | 42.28 |
+| 10 layers | 42.73 | 42.26 |
+| 12 layers | 42.69 | 42.33 |
