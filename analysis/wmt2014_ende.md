@@ -28,12 +28,15 @@ Each v1/v2 setting is runned for one time due to the limitation of computation r
 ## Inference results
 We use beam search with beamwidth 5 and lenght penalty 1.0 to generate candidates. The results are shown below:
 
-| Network Architecture | v1 | v2 |
-|-------|--------|---------|
-| 6 layers | 29.12 | 26.11 |
-| 8 layers | 28.75 | -- |
-| 10 layers | 28.63 | -- |
-| 12 layers | fail | -- |
+| Network Architecture | v1 |
+|-------|--------|
+| 6 layers | 29.12 | 
+| 8 layers | 28.75 | 
+| 10 layers | 28.63 | 
+| 12 layers | fail | 
 
 Still, using 6-layer network is the best choice.
+
+## Training performance of WMT2014 English$\to$German
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~xyc1207/32.embed"></iframe>
 
